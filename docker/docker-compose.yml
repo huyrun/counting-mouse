@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  app:
+    container_name: mouses
+    build:
+      context: ..
+      dockerfile: ./docker/Dockerfile
+    ports:
+      - "8080:8080"
+    env_file:
+      - .test.env
+    command: ["./app"]
