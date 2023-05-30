@@ -6,3 +6,5 @@ services:
       context: ..
       dockerfile: docker/test.Dockerfile
     env_file: .test.env
+    volumes:
+      - ../output:/src/output
