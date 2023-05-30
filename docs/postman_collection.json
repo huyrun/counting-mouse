@@ -1,0 +1,44 @@
+{
+  "info": {
+    "_postman_id": "eb348249-fd6d-49bf-a682-a24bdda177b7",
+    "name": "Couting Mouse",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "21149507"
+  },
+  "item": [
+    {
+      "name": "Count alive mouses",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8080/v1/mouses/alive?originalAmount=1&lifeSpan=2&months=1",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "v1",
+            "mouses",
+            "alive"
+          ],
+          "query": [
+            {
+              "key": "originalAmount",
+              "value": "1"
+            },
+            {
+              "key": "lifeSpan",
+              "value": "2"
+            },
+            {
+              "key": "months",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
