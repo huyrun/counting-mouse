@@ -24,11 +24,11 @@ func CountAliveMouse(originalAmount, lifeSpan, months int) int {
 	mouses[0] = originalAmount
 
 	for i := 0; i < months; i++ {
-		m := util.SumArray(mouses[0:lifeSpan])
+		newMouses := util.SumArray(mouses)
 		for j := lifeSpan - 1; j >= 1; j-- {
 			mouses[j] = mouses[j-1]
 		}
-		mouses[0] = m
+		mouses[0] = newMouses
 	}
 	return util.SumArray(mouses)
 }
